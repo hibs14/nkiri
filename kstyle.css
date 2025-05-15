@@ -1,0 +1,184 @@
+body{
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    background-color: transparent;
+    width: 80%;
+    margin: 10px auto 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.head-logo img{
+    width: 50%;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul li{
+   display: inline;
+   margin-right: 30px;
+   font-size: 15px;
+}
+nav ul li a{
+   text-decoration: none;
+   color: black;
+}
+hr{
+    margin: 0px;
+}
+
+main{
+    width: 80%;
+    margin: 10px auto;
+    
+}
+
+.notice{
+    background-color: skyblue;
+    border-left: 5px solid rgb(109, 169, 193);
+    padding: 20px;
+    margin-bottom: 20px;
+    color:rgb(30, 50, 58) ;
+    line-height: 30px;
+}
+.imp{
+    background-color: lightgoldenrodyellow;
+    border-left: 5px solid rgb(228, 228, 186);
+    padding: 20px;
+    margin-bottom: 20px;
+    color: rgb(44, 44, 36);
+    line-height: 30px;
+}
+.notifications h3{
+    margin: 0px;
+}
+
+.mid-page p{
+    font-weight: 600;
+    margin: 20px 0px;
+    font-size: 17px;
+}
+.mid-page input[type=search] {
+    width: 100%;
+    padding: 10px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 17px;
+}
+
+.movie-container{
+    width: 80%;
+    margin-bottom: 20px;
+}
+.movie-container h2{
+    padding: 10px;
+}
+.movie-container .grid-movies{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    gap: 20px;
+}
+.movie-container .grid-movies .box{
+    background-color: transparent;
+    border: 1px solid rgb(180, 180, 180);
+    text-align: center;
+    box-shadow: -1px 8px 7px -2px rgba(226,218,218,0.75);
+}
+.movie-container .grid-movies .box p{
+    padding: 0px 10px ;
+    
+}
+.movie-container .grid-movies .box a{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    
+}
+.movie-container img{
+    width:189px;
+    height: 267px;
+    object-fit: fill;
+}
+
+.movie-container button{
+    width: 125%;
+    background-color: skyblue;
+    box-sizing: border-box;
+    padding: 10px;
+    align-items: center;
+    margin: 50px auto;
+    border: none;
+    border-radius: 5px;
+}
+.movie-container button a{
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+}
+.movie-container button:hover{
+    background-color: rgb(79, 124, 142);
+    color: bisque;
+}
+
+.chinese-page {
+    text-align: center;
+}
+
+
+/* RESPOSIVENESS */
+@media (min-width:993px){
+    .hamburger-icon{
+        display: none;
+    }
+   
+}
+
+@media(max-width:992px){
+    nav{
+        display: none;
+    }
+    .header{
+        width: 100%;
+    }
+    .main-container{
+       padding: 20px;
+       width: auto;
+    }
+
+     .movie-container .grid-movies{
+    display: grid;
+    grid-template-columns: auto auto ;
+    gap: 30px;
+    
+}
+    .hamburger-icon{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .hamburger-icon p{
+        margin-left: 15px;
+    }
+
+    hr{
+        width: 100%;
+    }
+    .notifications{
+        width: 100%;
+    }
+
+    main{
+        width: 100%;
+        align-items:center ;
+    }
+    
+}
+}
