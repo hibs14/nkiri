@@ -181,6 +181,9 @@ main{
         width: 100%;
         align-items:center ;
     }
-    
-}
+    .chinese-page {
+    text-align: center;
+    width: 50%;
+    display: block;
+    }
 }
